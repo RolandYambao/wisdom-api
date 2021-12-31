@@ -4,29 +4,29 @@ const { storeReview } = require("./models");
 
 Quote.insertMany(
     {
-        name: "",
-        origin: "",
-        quote: "",
+        name: "Abraham Lincoln",
+        origin: "December 18, 1864",
+        quote: "'Just because something is in the internet, does not mean it's real",
     },
     {
-        name: "",
-        origin: "",
-        quote: "",
+        name: "O'Brien",
+        origin: "1984",
+        quote: "'If you want a picture of the future, imagine a boot stamping on a human face - for ever.'",
     },
     {
-        name: "",
-        origin: "",
-        quote: "",
+        name: "Emperor Qin Shi Huang",
+        origin: "The Tyrants: 2500 Years of Absolute Power and Corruption",
+        quote: "'I have collected all the writings of the Empire and burnt those which were of no use.'",
     },
     {
-        name: "",
-        origin: "",
-        quote: "",
+        name: "Joseph de Maistre",
+        origin: "St Petersburg Dialogues",
+        quote: "'The whole earth, perpetually steeped in blood, is nothing but a vast altar upon which all that is living must be sacrificed without end, without measure, without pause, until the consummation of things, until evil is extinct, until the death of death.'",
     },
     {
-        name: "",
-        origin: "",
-        quote: "",
+        name: "Lord of Wisdom",
+        origin: "Right Now",
+        quote: "'Join me, obey me, the world is mine.'",
     },
 )
     .then((newQuote) => {
