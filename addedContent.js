@@ -2,7 +2,7 @@ const { Quote } = require("./models");
 const { quoteReview } = require("./models");
 const { storeReview } = require("./models");
 
-Quote.insertMany(
+Quote.insertMany([
     {
         name: "Abraham Lincoln",
         origin: "December 18, 1864",
@@ -28,7 +28,7 @@ Quote.insertMany(
         origin: "Right Now",
         quote: "'Join me, obey me, the world is mine.'",
     },
-)
+])
     .then((newQuote) => {
         console.log(newQuote);
     })
@@ -36,7 +36,7 @@ Quote.insertMany(
         console.log(error);
     });
 
-quoteReview.insertMany(
+quoteReview.insertMany([
     {
         name: "John",
         review: "'I have been enlightened by great masters.'",
@@ -61,7 +61,7 @@ quoteReview.insertMany(
         name: "Rob",
         review: "I am estatic for the greatness I am witnessing.'",
     },
-)
+])
     .then((newQuoteReview) => {
         console.log(newQuoteReview);
     })
@@ -69,7 +69,7 @@ quoteReview.insertMany(
         console.log(error);
     });
 
-storeReview.insertMany(
+storeReview.insertMany([
     {
         name: "John",
         review: "'The Greatest thing I have ever bought.'",
@@ -94,7 +94,7 @@ storeReview.insertMany(
         name: "Rob",
         review: "'The greatest use of my hard earned money.'",
     },
-)
+])
     .then((newStoreReview) => {
         console.log(newStoreReview);
     })
