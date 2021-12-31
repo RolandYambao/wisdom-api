@@ -22,5 +22,7 @@ db.on("error", () => {
 });
 
 module.exports = {
-    Quote: require("./wise-quotes"),
+    Quote: require("./quotes"),
+    quoteReview: require("./quoteReviews"),
+    storeReview: require("./storeReviews"),
 };
