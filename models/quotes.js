@@ -2,7 +2,7 @@
 // quote schema
 const mongoose = require("mongoose");
 
-const quote = new mongoose.Schema({
+const quoteSchema = new mongoose.Schema({
     name: String,
     origin: String,
     quote: String,
