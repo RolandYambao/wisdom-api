@@ -15,7 +15,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-app.get("/wise-quotes", async (request, response) => {
+app.get("/quotes", async (request, response) => {
     try {
         const quoteArray = await Quote.find({});
         response.json({ quoteArray });
@@ -24,7 +24,7 @@ app.get("/wise-quotes", async (request, response) => {
     }
 });
 
-app.get("/quote-reviews", async (request, response) => {
+app.get("/quoteReviews", async (request, response) => {
     try {
         const quoteReviewArray = await quoteReview.find({});
         response.json({ quoteReviewArray });
@@ -33,7 +33,7 @@ app.get("/quote-reviews", async (request, response) => {
     }
 });
 
-app.get("/store-reviews", async (request, response) => {
+app.get("/storeReviews", async (request, response) => {
     try {
         const storeReviewArray = await storeReview.find({});
         response.json({ storeReviewArray });
