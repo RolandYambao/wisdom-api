@@ -5,7 +5,7 @@ const { storeReview } = require("./models");
 Quote.insertMany([
     {
         name: "Abraham Lincoln",
-        origin: "December 18, 1864",
+        origin: "December 21, 2012",
         quote: "'Just because something is in the internet, does not mean it's real.'",
     },
     {
