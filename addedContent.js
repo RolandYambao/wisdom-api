@@ -6,7 +6,7 @@ Quote.insertMany([
     {
         name: "Abraham Lincoln",
         origin: "December 18, 1864",
-        quote: "'Just because something is in the internet, does not mean it's real'",
+        quote: "'Just because something is in the internet, does not mean it's real.'",
     },
     {
         name: "O'Brien",
