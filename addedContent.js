@@ -102,4 +102,6 @@ storeReview.insertMany([
         console.log(error);
     });
 
-// Quote.deleteMany([]);
+// Quote.deleteMany({}, function (err) {
+//     console.log("Success");
+// });
